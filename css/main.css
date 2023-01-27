@@ -1,0 +1,606 @@
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 100px 20px
+}
+
+header {
+    color: white;
+    background-color: #2A9D8F;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header img {
+    padding: 7px;
+    border-radius: 7px;
+}
+
+header img:hover {
+    background-color: #60B6AB;
+}
+
+.active {
+    background-color: #60B6AB;
+}
+
+header h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #2A9D8F;
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+}
+
+#logout-button {
+    background-color: #E76F51;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#logout-button-div {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------
+------------------------------ALERTS------------------------------
+----------------------------------------------------------------- */
+
+#alert-div {
+    display: none;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#alert-div p{
+    flex-grow: 1;
+}
+
+.error-alert {
+    border: 2px solid #9d0208;
+    background-color: #F9F0F0;
+    padding: 0px 10px;
+}
+
+.error-alert p {
+    color: #9d0208
+}
+
+.success-alert {
+    border: 2px solid #276F6D;
+    background-color: #E4EDED;
+    padding: 0px 10px;
+}
+
+.success-alert p {
+    color: #276F6D;
+}
+
+/* --------------------------------------------------------------
+------------------------------FORMS------------------------------
+----------------------------------------------------------------- */
+
+.form-div label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    color: #6c757d;
+    font-size: 15px;
+}
+
+.form-div input {
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    border: 1px solid #adb5bd;
+    padding-left: 10px;
+}
+
+.form-div button {
+    width: 100%;
+    padding: 12px;
+    background-color: #60B6AB;
+    color: white;
+    border: none;
+    border-radius: 0px 10px 0px 10px;
+    margin: 30px 0px;
+    font-weight: 600;
+}
+
+.form-div button:hover {
+    background-color: #2A9D8F;
+    cursor: pointer;
+}
+
+.form-div input:focus {
+    outline: none;
+    border: 2px solid #2A9D8F;
+}
+
+.form-div {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------------------------------------------------------
+----------------------------LOGIN--------------------------------
+----------------------------------------------------------------- */
+
+#create-account-link-div, #login-link-div{
+    text-align: center;
+}
+
+/* --------------------------------------------------------------
+-----------------------------INDEX-------------------------------
+----------------------------------------------------------------- */
+
+#no-habits-div {
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 100px;
+}
+
+.add-habit-div {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    left: 20px;
+    max-width: 504px;
+    margin: auto;
+}
+
+.add-habit-div input {
+    padding: 10px;
+    flex-grow: 1;
+    height: 30px;
+    border: 2px solid #2A9D8F;
+    border-radius: 0px;
+}
+
+.add-habit-div img {
+    height: 40px;
+    padding: 7px;
+    background-color: #2A9D8F;
+    cursor: pointer;
+}
+
+.habit-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+    scroll-margin-top: 100px;
+}
+
+.habit-div img {
+    cursor: pointer;
+}
+
+.check-box-and-p-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#date-picker {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#incomplete-habits {
+    display: none;
+    border: 2px solid #E76F51;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#complete-habits {
+    display: none;
+    border: 2px solid #276F6D;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#incomplete-p {
+    background-color: #E76F51;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+#complete-p {
+    background-color: #276F6D;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+.display-none {
+    display: none;
+}
+
+.show-loading-div {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loader {
+    border: 7px solid #f3f3f3; /* Light grey */
+    border-top: 7px solid #2A9D8F;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* --------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+
+.option-div {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0px;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.option-div p {
+    margin: 5px;
+}
+
+.option-div img {
+    width: 20px;
+}
+
+.edit-div {
+    margin-top: -10px;
+    color: #03045e;
+}
+
+.delete-div p {
+    color: #9d0208;
+}
+
+/* --------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+
+#delete-confirmation-div {
+    display: none;
+    border: 4px solid #9d0208;
+    border-radius: 5px;
+    padding: 40px 10px;
+    background-color: #F9F0F0;
+    min-width: 240px;
+    max-width: 460px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#delete-confirmation-div h4 {
+    margin: 0px;
+}
+
+#delete-buttons-div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#delete-buttons-div button {
+    padding: 5px 15px;
+    border-radius: 2px;
+}
+
+#delete-button {
+    background-color: #9d0208;
+    color: white;
+    border: none;
+}
+
+.cancel-button {
+    background-color: #F9F0F0;
+    color: #9d0208;
+    border: 2px solid #9d0208;
+}
+
+/* --------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+
+#edit-input-div {
+    display: none;
+    border: 4px solid #03045e;
+    border-radius: 5px;
+    padding: 40px 10px;
+    background-color: #F0F0F5;
+    min-width: 240px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#edit-input-div h4 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+#edit-input-div input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+
+#edit-input-div input:focus {
+    border: 2px solid #03045e;
+}
+
+#edit-buttons-div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#edit-buttons-div button {
+    padding: 5px 15px;
+    border-radius: 2px;
+}
+
+#edit-button {
+    background-color: #03045e;
+    color: white;
+    border: none;
+}
+
+#cancel-edit-button {
+    background-color: #F0F0F5;
+    border: 2px solid #03045e;
+    color: #03045e;
+}
+
+/* --------------------------------------------------------------
+-------------------------CALENDAR PAGE---------------------------
+----------------------------------------------------------------- */
+
+#calendar-div {
+    max-width: 550px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#calendar-div ul {
+    list-style-type: none;
+}
+
+/* Month header */
+#month {
+  padding: 20px 25px;
+  background: #23404B;
+  text-align: center;
+}
+
+/* Month list */
+#month ul {
+  margin: 0;
+  padding: 0;
+}
+
+#month ul li {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+#month #prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+#month #next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+#weekdays {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #3F5862;
+  color: white;
+  font-size: 14px;
+}
+
+
+/* Days (1-31) */
+#days {
+  padding: 10px 0;
+  background: #F2F4F4;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 15px 5px;
+}
+
+.month-day {
+    border-bottom: 1px solid black;
+    padding: 10px 1px 5px 1px;
+}
+
+#days div {
+  font-size: 18px;
+  min-height: 60px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+
+#habits-div-on-calendar-page {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 550px;
+}
+
+.calendar-checkbox-and-p-div {
+    display: flex;
+    gap: 10px;
+    max-width: 550px;
+}
+
+.calendar-checkbox-and-p-div p {
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    align-self: center;
+}
+
+.calendar-checkbox-and-p-div input[type='checkbox'] {
+    display: inline;
+    width: 25px;
+}
+
+/* --------------------------------------------------------------
+-----------------------Check Boxes on Calendar Page--------------
+----------------------------------------------------------------- */
+
+/* The container */
+.calendar-checkbox-label-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .calendar-checkbox-label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ddd;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .calendar-checkbox-label-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .calendar-checkbox-label-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .calendar-checkbox-label-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .calendar-checkbox-label-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

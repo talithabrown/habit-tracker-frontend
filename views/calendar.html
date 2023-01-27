@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Calender Page</title>
+        <meta name="description" content="Calendar page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#2A9D8F"/>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/medium.css">
+        <link rel="stylesheet" href="../css/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h3>Habit Tracker</h3>
+            <div>
+                <a href="../index.html"><img src="../images/list.svg" alt="list icon"></a>
+                <a href="../views/calendar.html"><img class="active" src="../images/calendar.svg" alt="calender icon"></a>
+                <a href="../views/profile.html"><img src="../images/user.svg" alt="profile icon"></a>
+            </div>
+        </header>
+        
+        <main>
+
+            <div id="alert-div" class="error-alert">
+                <p></p>
+                <img src="../images/x.svg" alt="close icon" id="close-alert">
+            </div>
+
+            <h2>View your monthly progress!</h2>
+
+            <div id="calendar-and-habits-div">
+                <div id="calendar-div">
+                    <div id="month">
+                        <ul>
+                        <li id="prev"><img src="../images/chevron-left.svg" alt="previous icon"></li>
+                        <li id="next"><img src="../images/chevron-right.svg" alt="next icon"></li>
+                        <li id="monthName"></li>
+                        <li id="year"></li>
+                        </ul>
+                    </div>
+                    
+                    <ul id="weekdays">
+                        <li>S</li>
+                        <li>M</li>
+                        <li>T</li>
+                        <li>W</li>
+                        <li>T</li>
+                        <li>F</li>
+                        <li>S</li>
+                    </ul>
+                    
+                    <div id="days">
+
+                    </div>
+                </div>
+
+                <div id="habits-div-on-calendar-page">
+                    
+                </div>
+            </div>
+
+        </main>
+
+        <script src="../js/protect.js"></script>
+        <script src="../js/alert.js"></script>
+        <script src="../js/calendar.js"></script>
+
+    </body>
+
+</html>

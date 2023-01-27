@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Create Account Page</title>
+        <meta name="description" content="Create account page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#2A9D8F"/>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/medium.css">
+        <link rel="stylesheet" href="../css/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h3>Habit Tracker</h3>
+        </header>
+        
+        <main>
+
+            <div id="alert-div" class="error-alert">
+                <p></p>
+                <img src="../images/x.svg" alt="close icon" id="close-alert">
+            </div>
+
+            <div class='form-div'>
+                <h2>CREATE ACCOUNT</h2>
+                <div class='form-control'>
+                    <label>Email:</label>
+                    <input id="create-account-email" type='email'/>
+                </div>
+                <div class='form-control'>
+                    <label>Password:</label>
+                    <input id="create-account-password" type='password'/>
+                </div>
+                <div class='form-control'>
+                    <label>Confirm Password:</label>
+                    <input id="create-account-confirm-password" type='password'/>
+                </div>
+                <div class="buttonHolderDiv">
+                    <button id="create-account-button">Create Account</button>
+                </div>
+            </div>
+            <div id="login-link-div">
+                <a href="./login.html">Login</a>
+            </div>
+
+        </main>
+        
+
+        <script src="../js/alert.js"></script>
+        <script src="../js/createAccount.js"></script>
+
+    </body>
+
+</html>

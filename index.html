@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <meta name="description" content="Home page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#2A9D8F"/>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h3>Habit Tracker</h3>
+            <div>
+                <a href=""><img class="active" src="images/list.svg" alt="list icon"></a>
+                <a href="./views/calendar.html"><img src="images/calendar.svg" alt="calender icon"></a>
+                <a href="./views/profile.html"><img src="images/user.svg" alt="profile icon"></a>
+            </div>
+        </header>
+        
+        <main id="home-main">
+
+            <div id="alert-div" class="error-alert">
+                <p></p>
+                <img src="./images/x.svg" alt="close icon" id="close-alert">
+            </div>
+
+            <input type="date" id="date-picker">
+
+            <div id="no-habits-div">
+                <p>Start by creating new habits below!</p>
+                <img src="./images/arrow-down.svg" alt="down arrow">
+            </div>
+
+            <div id="incomplete-habits">
+                <p id="incomplete-p">Incomplete Habits</p>
+            </div>
+
+            <div id="complete-habits">
+                <p id="complete-p">Complete Habits</p>
+            </div>
+
+            <div id="loading-div">
+                <p>Loading...</p>
+                <div class="loader"></div>
+            </div>
+
+            <div class="add-habit-div">
+                <input id="new-habit-input" placeholder="Type new habit here">
+                <img id="add-habit-button" src="images/plus-circle.svg" alt="add icon">
+            </div>
+
+            <div id="delete-confirmation-div">
+                <h4>Are you sure you want to delete habit and all its history?</h4>
+                <p>Once deleted you can NOT get it back.</p>
+                <div id="delete-buttons-div">
+                    <button id="delete-button">Delete</button>
+                    <button class="cancel-button" id="cancel-delete-button">Cancel</button>
+                </div>
+            </div>
+
+            <div id="edit-input-div">
+                <h4>Edit</h4>
+                <input type="text" id="edit-input">
+                <div id="edit-buttons-div">
+                    <button id="edit-button">Edit</button>
+                    <button class="cancel-button" id="cancel-edit-button">Cancel</button>
+                </div>
+            </div>
+
+            
+        </main>
+
+        <script src="js/protect.js"></script>
+        <script src="js/alert.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
+
